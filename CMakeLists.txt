@@ -14,7 +14,7 @@ find_package(CURL REQUIRED)
 find_package(Boost COMPONENTS filesystem REQUIRED)
 
 
-add_executable (WebCrawler main.cpp MainTask/main_task.h MainTask/main_task.cpp hrefStruct/href_t.h ThreadsafeQueue/threadsafe_queue.h Configuration/configuration.h TimeMeasurement/time_measurement.h TimeMeasurement/time_measurement.cpp)
+add_executable (WebCrawler main.cpp MainTask/main_task.h MainTask/main_task.cpp hrefStruct/href_t.h ThreadsafeQueue/threadsafe_queue.h Configuration/configuration.h)
 include_directories(${CURL_INCLUDE_DIR})
 
 INCLUDE_DIRECTORIES(${Gumboe_INCLUDE_DIR})
